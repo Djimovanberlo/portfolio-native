@@ -6,7 +6,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>
-        Open up App.js to start working on your app! working @ emulator!
+        Open up Appqq.js to wwwest start workinaaag on your app! working @
+        emulator!
       </Text>
       <StatusBar style="auto" />
     </View>
