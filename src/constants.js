@@ -13,7 +13,7 @@ export const projectList = [
       "Sequelize",
     ],
     description: "full stack boy",
-    link: "soaring-flocks.netlify.app",
+    link: "http://soaring-flocks.netlify.app",
   },
   {
     id: 2,
@@ -29,20 +29,20 @@ export const projectList = [
       "Sequelize",
     ],
     description: "full stack boy",
-    link: "www.google.com",
+    link: "http://www.google.com",
   },
   {
     id: 3,
     name: "Soaring Flocks",
     stack: ["React, React Native"],
     description: "PortfolioBoy",
-    link: "www.google.com",
+    link: "http://www.google.com",
   },
   {
     id: 4,
     name: "Talent Calculator",
     stack: ["TBD"],
     description: "Work in progress",
-    link: "www.google.com",
+    link: "http://google.com",
   },
 ];

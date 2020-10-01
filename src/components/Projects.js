@@ -1,13 +1,23 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import {
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+  Container,
+} from "react-native";
 
 import { projectList } from "../constants";
+import Constants from "expo-constants";
+
 import SingleProject from "./SingleProject";
 
 export default function Projects() {
   return (
-    <>
-      <Text>
+    // <Container>
+    <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.scrollView}>
         {projectList.map((project) => {
           return (
             <SingleProject
@@ -19,7 +29,21 @@ export default function Projects() {
             />
           );
         })}
-      </Text>
-    </>
+      </ScrollView>
+    </SafeAreaView>
+    // </Container>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginTop: Constants.statusBarHeight,
+  },
+  scrollView: {
+    marginHorizontal: 20,
+  },
+  text: {
+    fontSize: 42,
+  },
+});
