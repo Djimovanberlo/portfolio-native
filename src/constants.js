@@ -1,0 +1,48 @@
+export const projectList = [
+  {
+    id: 1,
+    name: "Soaring Flocks",
+    stack: [
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "React",
+      "Redux",
+      "Bootstrap",
+      "GraphQL",
+      "Sequelize",
+    ],
+    description: "full stack boy",
+    link: "http://soaring-flocks.netlify.app",
+  },
+  {
+    id: 2,
+    name: "Groceries App",
+    stack: [
+      "TypeScript",
+      "CSS",
+      "HTML",
+      "React",
+      "Redux",
+      "Bootstrap",
+      "GraphQL",
+      "Sequelize",
+    ],
+    description: "full stack boy",
+    link: "http://www.google.com",
+  },
+  {
+    id: 3,
+    name: "Soaring Flocks",
+    stack: ["React, React Native"],
+    description: "PortfolioBoy",
+    link: "http://www.google.com",
+  },
+  {
+    id: 4,
+    name: "Talent Calculator",
+    stack: ["TBD"],
+    description: "Work in progress",
+    link: "http://google.com",
+  },
+];
