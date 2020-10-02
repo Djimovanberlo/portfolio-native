@@ -41,7 +41,7 @@ export const projectList = [
   {
     id: 4,
     name: "Talent Calculator",
-    stack: ["TBD"],
+    stack: [],
     description: "Work in progress",
     link: "http://google.com",
   },
