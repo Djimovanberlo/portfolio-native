@@ -34,7 +34,7 @@ export const projectList = [
   {
     id: 3,
     name: "Soaring Flocks",
-    stack: ["React, React Native"],
+    stack: ["React"],
     description: "PortfolioBoy",
     link: "http://www.google.com",
   },
