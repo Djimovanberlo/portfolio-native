@@ -21,7 +21,7 @@ export default function Projects() {
         {projectList.map((project) => {
           return (
             <SingleProject
-              id={project.id}
+              key={project.id}
               name={project.name}
               stack={project.stack}
               description={project.description}

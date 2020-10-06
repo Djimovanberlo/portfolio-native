@@ -5,17 +5,26 @@ import {
   StyleSheet,
   Text,
   View,
+  Image,
 } from "react-native";
+
+import LinkedIn from "../img/icons/LinkedIn.png";
 
 export default function SingleProject(props) {
   return (
     <View style={styles.container}>
       <Text style={{ fontSize: 20 }}>{props.name}</Text>
-      <Text>
-        {props.stack.map((tech) => {
-          return <Text>{tech}</Text>;
+      <View style={{ flex: 1, flexDirection: "row" }}>
+        {props.stack.map((tech, index) => {
+          return (
+            <Image
+              style={{ resizeMode: "cover", width: 35, height: 35 }}
+              source={require(`../img/icons/${tech}.png`)}
+              key={index}
+            />
+          );
         })}
-      </Text>
+      </View>
       <Text>{props.description}</Text>
       <TouchableOpacity onPress={() => Linking.openURL(props.link)}>
         <Text>Link to project</Text>
