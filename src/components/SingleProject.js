@@ -15,10 +15,12 @@ export default function SingleProject(props) {
     <View style={styles.container}>
       <Text style={{ fontSize: 20 }}>{props.name}</Text>
       {props.github ? (
-        <Image
-          style={{ resizeMode: "cover", width: 35, height: 35 }}
-          source={require(`../img/icons/Github.png`)}
-        />
+        <TouchableOpacity onPress={() => window.open(props.github)}>
+          <Image
+            style={{ resizeMode: "cover", width: 35, height: 35 }}
+            source={require(`../img/icons/Github.png`)}
+          />
+        </TouchableOpacity>
       ) : null}
       <View style={{ flex: 1, flexDirection: "row" }}>
         {props.stack.map((tech, index) => {
@@ -33,7 +35,7 @@ export default function SingleProject(props) {
       </View>
       <Text>{props.description ? props.description : null}</Text>
       {props.link ? (
-        <TouchableOpacity onPress={() => Linking.openURL(props.link)}>
+        <TouchableOpacity onPress={() => window.open(props.link)}>
           <Text>Link to project</Text>
         </TouchableOpacity>
       ) : null}

@@ -12,7 +12,8 @@ export const projectList = [
       "GraphQL",
       "Sequelize",
     ],
-    description: "Soaring flocks is my portfolio project ",
+    description:
+      "Soaring flocks is my portfolio project for Codaisseur. I built a full stack game, where players can register/login. Every night, players get awarded resources, which they can then freely trade or invest into more resources. Soaring Flocks also contains a chatbox, built with GraphQL subscriptions.",
     link: "http://soaring-flocks.netlify.app",
     github: "https://github.com/Djimovanberlo/soaring-flocks-client",
   },
@@ -38,7 +39,7 @@ export const projectList = [
     id: 3,
     name: "Fake ID Generator",
     stack: ["React", "Redux", "CSS"],
-    description: "PortfolioBoy",
+    description: `Fake ID generator was our group project during the Codaisseur Academy. Within the theme "travel", we wanted to use a face-detection API, where users can add gorgeous and not so gorgeous features to their face. Built in about three days.`,
     link: "https://relaxed-heisenberg-4577a7.netlify.app/",
     github: "https://github.com/wmw123/fake-id-generator",
   },
@@ -47,7 +48,7 @@ export const projectList = [
     name: "Student platform",
     stack: [null],
     description:
-      "I would like to build a simple platform that connects school- and college students with peers around the world. I feel it's better to learn a language and culture by interacting, not exclusively reading books:)",
+      "I would like to build a simple platform that connects school- and college students with peers around the world. I feel it's better to learn language and culture by interacting, not exclusively reading books:)",
     link: null,
     github: null,
   },
