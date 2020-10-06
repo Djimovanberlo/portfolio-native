@@ -26,6 +26,7 @@ export default function Projects() {
               stack={project.stack}
               description={project.description}
               link={project.link}
+              github={project.github}
             />
           );
         })}
