@@ -14,21 +14,29 @@ export default function SingleProject(props) {
   return (
     <View style={styles.container}>
       <Text style={{ fontSize: 20 }}>{props.name}</Text>
+      {props.github ? (
+        <Image
+          style={{ resizeMode: "cover", width: 35, height: 35 }}
+          source={require(`../img/icons/Github.png`)}
+        />
+      ) : null}
       <View style={{ flex: 1, flexDirection: "row" }}>
         {props.stack.map((tech, index) => {
-          return (
+          return tech ? (
             <Image
               style={{ resizeMode: "cover", width: 35, height: 35 }}
               source={require(`../img/icons/${tech}.png`)}
               key={index}
             />
-          );
+          ) : null;
         })}
       </View>
-      <Text>{props.description}</Text>
-      <TouchableOpacity onPress={() => Linking.openURL(props.link)}>
-        <Text>Link to project</Text>
-      </TouchableOpacity>
+      <Text>{props.description ? props.description : null}</Text>
+      {props.link ? (
+        <TouchableOpacity onPress={() => Linking.openURL(props.link)}>
+          <Text>Link to project</Text>
+        </TouchableOpacity>
+      ) : null}
     </View>
   );
 }

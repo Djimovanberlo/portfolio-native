@@ -12,13 +12,11 @@ export default function About() {
         </View>
         <View style={styles.infoContainer}>
           <Text style={styles.textStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+            I like to play with some code, cook up some games and develop some
+            dinner. In july I graduated from the Codaisseur academy, an
+            intensive full stack JavaScript bootcamp. I have been coding since.
+            In this portfolio you'll find my resume, info about me and projects
+            have been working on. Get in touch!
           </Text>
         </View>
         <Button title="Download Resume"></Button>
