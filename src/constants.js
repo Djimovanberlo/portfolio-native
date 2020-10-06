@@ -34,14 +34,14 @@ export const projectList = [
   {
     id: 3,
     name: "Soaring Flocks",
-    stack: ["React"],
+    stack: ["React", "Redux"],
     description: "PortfolioBoy",
     link: "http://www.google.com",
   },
   {
     id: 4,
     name: "Talent Calculator",
-    stack: [],
+    stack: ["React", "Redux"],
     description: "Work in progress",
     link: "http://google.com",
   },

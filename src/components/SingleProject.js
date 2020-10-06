@@ -5,29 +5,24 @@ import {
   StyleSheet,
   Text,
   View,
+  Image,
 } from "react-native";
 
 import LinkedIn from "../img/icons/LinkedIn.png";
 
 export default function SingleProject(props) {
-  const iconGenerator = (iconString, index, name) => {
-    console.log(name, iconString, "generated!");
-    console.log(require(`../img/icons/${iconString}.png`));
-    return (
-      <Image
-        style={{ resizeMode: "cover", width: 35, height: 35 }}
-        source={require(`../img/icons/${iconString}.png`)}
-        key={index}
-      />
-    );
-  };
-
   return (
     <View style={styles.container}>
       <Text style={{ fontSize: 20 }}>{props.name}</Text>
-      <View style={{ flex: 1, flexDirection: "column" }}>
+      <View style={{ flex: 1, flexDirection: "row" }}>
         {props.stack.map((tech, index) => {
-          iconGenerator(tech, index, props.name);
+          return (
+            <Image
+              style={{ resizeMode: "cover", width: 35, height: 35 }}
+              source={require(`../img/icons/${tech}.png`)}
+              key={index}
+            />
+          );
         })}
       </View>
       <Text>{props.description}</Text>
