@@ -7,6 +7,8 @@ import About from "./src/components/About";
 import Projects from "./src/components/Projects";
 import Contact from "./src/components/Contact";
 
+// To do: fix Nav bar
+
 export default function App() {
   const [activeTab, set_activeTab] = useState(<About />);
 

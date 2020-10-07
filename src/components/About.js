@@ -19,6 +19,7 @@ export default function About() {
         </View>
         <View style={styles.infoContainer}>
           <Text style={styles.textStyle}>
+            {/* To do: hyperlink to Contact page ("Get in touch!") && hyperlink to codaisseur */}
             I like to play with some code, cook up some games and develop some
             dinner. In july I graduated from the Codaisseur academy, an
             intensive full stack JavaScript bootcamp. I have been coding since.
